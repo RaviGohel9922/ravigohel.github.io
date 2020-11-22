@@ -655,7 +655,7 @@
                       </h5>
                     </div>
                     <div>
-                      <form id="gform" action="https://docs.google.com/forms/d/e/1FAIpQLSddgR0pD3pyDtPetjImGTpJovehsSpGit1UG0h4keLCv6u63w/formResponse" method="post" class="contact-form text-right" target="hidden_iframe" onsubmit="submitted=true;" >
+                      <form id="gform" action="https://docs.google.com/forms/d/e/1FAIpQLSf9owuLXub6_ygw7VSINvDNzxiHrW4vBAYPLKSDZRlUt_ShLQ/formResponse" method="post" class="contact-form text-right" target="hidden_iframe" onsubmit="submitted=true;" >
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
@@ -665,13 +665,13 @@
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="email" class="form-control" name="entry.388358409" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                              <input type="email" class="form-control" name="entry.388358409" id="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"  placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                               <div class="validate"></div>
                             </div>
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" class="form-control" name="entry.737130718" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                              <input type="text" class="form-control" name="entry.737130718" id="subject"  pattern="\d{10}" placeholder="Phone Number" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                               <div class="validate"></div>
                             </div>
                           </div>
@@ -681,16 +681,19 @@
                               <div class="validate"></div>
                             </div>
                           </div>
-                          <div class="col-md-12 text-center mb-3">
+                          <!-- <div class="col-md-12 text-center mb-3">
                             <div class="loading">Loading</div>
                             <div class="error-message"></div>
                             <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
+                          </div> -->
                           <div class="col-md-12 text-center">
                             <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
                           </div>
                         </div>
                       </form>
+                      <script type="text/javascript">var submitted=false;</script>
+	
+					            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.alert('Your Response has been recorded. Thanks For Contacting Me.');window.location='index.html';}"></iframe>					
                     </div>
                   </div>
                   <div class="col-md-6">
