@@ -665,13 +665,13 @@
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="email" class="form-control" name="entry.388358409" id="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"  placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                              <input type="email" class="form-control" name="entry.388358409" id="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"  placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" onfocus="this.placeholder = 'yourmail@email.com'" onblur="this.placeholder = 'Enter email address'" required="" type="email"/>
                               <div class="validate"></div>
                             </div>
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" class="form-control" name="entry.737130718" id="subject"  pattern="\d{10}" placeholder="Phone Number" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                              <input type="text" class="form-control" name="entry.737130718" id="subject"  pattern="\d{10}" placeholder="Phone Number" data-rule="minlen:4" data-msg="Please enter at least 10 chars of Phone Number" onfocus="this.placeholder = '1234567896'" onblur="this.placeholder = 'Enter your Mobile Number'" required="" type="tel" />
                               <div class="validate"></div>
                             </div>
                           </div>
